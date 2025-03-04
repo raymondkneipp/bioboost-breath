@@ -1,0 +1,4 @@
+- scenic background
+- music when playing with controls
+- finsih screen
+- preset times (sleep, focus, etc.)

@@ -1,0 +1,37 @@
+{
+  "name": "bioboost-breath",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vinxi dev --host 0.0.0.0",
+    "build": "vinxi build",
+    "start": "vinxi start"
+  },
+  "keywords": [],
+  "author": "Raymond Kneipp",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@tabler/icons-react": "^3.30.0",
+    "@tailwindcss/vite": "^4.0.9",
+    "@tanstack/react-router": "^1.112.0",
+    "@tanstack/react-start": "^1.112.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.9",
+    "use-sound": "^5.0.0",
+    "vinxi": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.8.2",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
