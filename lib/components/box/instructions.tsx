@@ -1,11 +1,16 @@
-import { IconArrowRight } from "@tabler/icons-react";
-import { Button } from "~/lib/components/ui/button";
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { Link } from "@tanstack/react-router";
+import { Button, buttonVariants } from "~/lib/components/ui/button";
 
 export function BoxInstructions(props: { onContinue: () => void }) {
   return (
     <div className="container p-2 max-w-md flex flex-col items-center gap-4">
+      <Link className={buttonVariants({ variant: "ghost", size: "sm" })} to="/">
+        <IconArrowLeft />
+        Home
+      </Link>
       <h1 className="font-bold text-3xl text-center">Box Breathing</h1>
-      <ol className="list-decimal sm:list-outside list-inside flex flex-col gap-2 text-blue-900/80">
+      <ol className="list-decimal sm:list-outside list-inside flex flex-col gap-2 text-blue-900">
         <li>
           Sit in a comfortable position with your back straight and feet flat on
           the floor

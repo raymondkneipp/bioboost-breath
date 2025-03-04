@@ -3,7 +3,6 @@ import { NumberInput } from "~/lib/components/ui/number-input";
 import React from "react";
 import { Button } from "~/lib/components/ui/button";
 import {
-  IconPlayerStopFilled,
   IconPlayerPlayFilled,
   IconPlayerPauseFilled,
   IconRepeat,
@@ -78,7 +77,7 @@ const BreathingExerciseWithCountdown: React.FC = () => {
   ); // 3-second countdown
 
   return (
-    <div className="flex flex-col items-center gap-6 px-2 py-12 w-full max-w-md">
+    <div className="flex flex-col items-center gap-6 px-2 py-12 w-full max-w-md mx-auto relative z-10">
       {showInstructions ? (
         <BoxInstructions
           onContinue={withBoop(() => setShowInstructions(false))}

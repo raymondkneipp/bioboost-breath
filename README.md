@@ -1,3 +1,2 @@
-- scenic background
 - music when playing with controls
 - finish screen

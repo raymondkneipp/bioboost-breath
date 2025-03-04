@@ -6,6 +6,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import tailwindcss from "~/lib/styles/tailwind.css?url";
+import { ToggleBg } from "~/lib/components/toggle-bg";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -72,6 +73,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <HeadContent />
       </head>
       <body className="bg-blue-200 text-blue-950">
+        <ToggleBg />
         {children}
         <Scripts />
       </body>
