@@ -9,18 +9,28 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <div className="container mx-auto max-w-lg flex flex-col gap-4 min-h-dvh items-center justify-center p-2">
-      <div className="flex items-center gap-2 justify-center flex-wrap">
-        <IconLungsFilled className="size-16" />
-        <h1 className="text-3xl font-bold text-center">BioBoost Breath</h1>
+      <div className="flex flex-col gap-4 items-center justify-center flex-grow">
+        <div className="flex items-center gap-2 justify-center flex-wrap">
+          <IconLungsFilled className="size-16" />
+          <h1 className="text-3xl font-bold text-center">BioBoost Breath</h1>
+        </div>
+        <p className="text-lg text-blue-900/80 text-center">
+          Breathing is the foundation of calm and focus. Control your breath,
+          and you control your mind and body.
+        </p>
+        <Link to="/box" className={buttonVariants({ size: "lg" })}>
+          <IconBox /> Box Breathing
+        </Link>
+        <p className="text-sm font-medium text-blue-900/60">More to come...</p>
       </div>
-      <p className="text-lg text-blue-900/80 text-center">
-        Breathing is the foundation of calm and focus. Control your breath, and
-        you control your mind and body.
-      </p>
-      <Link to="/box" className={buttonVariants({ size: "lg" })}>
-        <IconBox /> Box Breathing
-      </Link>
-      <p className="text-sm font-medium text-blue-900/60">More to come...</p>
+      <footer className="py-2">
+        <p className="text-sm">
+          Created by{" "}
+          <a href="https://raymondkneipp.com" className="underline">
+            Raymond Kneipp
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
